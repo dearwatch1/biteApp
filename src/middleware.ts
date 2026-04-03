@@ -2,20 +2,20 @@ import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
 export async function middleware(request: NextRequest) {
-//   const pathname = request.nextUrl.pathname;
+  const pathname = request.nextUrl.pathname;
 
-//   // Handle root path
-//   if (pathname === "/") {
-//     return NextResponse.redirect(new URL("/en", request.url));
-//   }
+  // Handle root path
+  // if (pathname === "/") {
+  //   return NextResponse.redirect(new URL("/en", request.url));
+  // }
 
-//   const cookieStore = await cookies();
-//   const accessToken = cookieStore.get("token")?.value;
-//   if (!accessToken) {
-//     return NextResponse.redirect(new URL(`/en/verify`, request.url));
-//   }
+  // const cookieStore = await cookies();
+  // const accessToken = cookieStore.get("token")?.value;
+  // if (!accessToken) {
+  //   return NextResponse.redirect(new URL(`/en/verify`, request.url));
+  // }
 
-  return NextResponse.next();
+  // return NextResponse.next();
 }
 
 export const config = {
